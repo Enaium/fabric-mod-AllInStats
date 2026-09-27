@@ -1,0 +1,39 @@
+[versions]
+kotlin = "2.4.20"
+fabricKotlin = "1.14.1+kotlin.2.4.20"
+ksp = "2.3.12"
+jimmer = "1.0.5+jimmer.0.12.2"
+jimmer-ksp = "0.12.2"
+h2 = "1.0.1+h2.2.5.250"
+h2Driver = "2.5.250"
+junit = "5.10.3"
+loom = "1.16-SNAPSHOT"
+publish = "2.2.1"
+fmg = "0.0.8"
+jackson = "2.21.0"
+imgui = "1.92.7.1"
+
+[libraries]
+kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+fabric-kotlin = { module = "net.fabricmc:fabric-language-kotlin", version.ref = "fabricKotlin" }
+jimmer = { module = "cn.enaium:fabric-orm-jimmer", version.ref = "jimmer" }
+jimmer-ksp = { module = "org.babyfish.jimmer:jimmer-ksp", version.ref = "jimmer-ksp" }
+h2 = { module = "cn.enaium:fabric-database-h2", version.ref = "h2" }
+h2-driver = { module = "com.h2database:h2", version.ref = "h2Driver" }
+jackson = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+imgui-java-binding = { module = "io.github.spair:imgui-java-binding", version.ref = "imgui" }
+imgui-java-app = { module = "io.github.spair:imgui-java-app", version.ref = "imgui" }
+imgui-java-lwjgl3 = { module = "io.github.spair:imgui-java-lwjgl3", version.ref = "imgui" }
+imgui-java-natives-windows = { module = "io.github.spair:imgui-java-natives-windows", version.ref = "imgui" }
+imgui-java-natives-linux = { module = "io.github.spair:imgui-java-natives-linux", version.ref = "imgui" }
+imgui-java-natives-macos = { module = "io.github.spair:imgui-java-natives-macos", version.ref = "imgui" }
+loom = { module = "net.fabricmc:fabric-loom", version.ref = "loom" }
+legacy-looming = { module = "net.legacyfabric:legacy-looming", version.ref = "loom" }
+publish = { module = "me.modmuss50.mod-publish-plugin:me.modmuss50.mod-publish-plugin.gradle.plugin", version.ref = "publish" }
+fmg = { module = "cn.enaium.fabric-multi-game:cn.enaium.fabric-multi-game.gradle.plugin", version.ref = "fmg" }
+junit-bom = { module = "org.junit:junit-bom", version.ref = "junit" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter" }
+
+[plugins]
+kotlin = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
