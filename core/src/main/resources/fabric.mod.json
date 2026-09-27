@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "allinstats",
+  "version": "@version@",
+  "name": "AllInStats",
+  "description": "Records what happens in a world - items, blocks, mobs, fishing and tools - and shows the timeline of every counter as a chart.",
+  "authors": [
+    "Enaium"
+  ],
+  "contact": {
+    "homepage": "https://github.com/Enaium/fabric-mod-AllInStats",
+    "sources": "https://github.com/Enaium/fabric-mod-AllInStats",
+    "issues": "https://github.com/Enaium/fabric-mod-AllInStats/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/allinstats/icon.png",
+  "environment": "*",
+  "mixins": [
+    "allinstats.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": "@minecraft_version@",
+    "java": ">=@java_version@",
+    "fabric-language-kotlin": "*",
+    "fabric-orm-jimmer": "*",
+    "fabric-database-h2": "*",
+    "fabric-gui-imgui": "*"
+  }
+}
